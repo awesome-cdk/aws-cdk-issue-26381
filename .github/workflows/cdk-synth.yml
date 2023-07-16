@@ -23,5 +23,5 @@ jobs:
         cache: 'pnpm'
 
     - run: pnpm i
-    - run: cdk synth
+    - run: pnpm exec cdk synth
       working-directory: "packages/cdk"

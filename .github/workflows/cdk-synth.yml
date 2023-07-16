@@ -18,6 +18,10 @@ jobs:
       with:
         node-version: 18.x
         cache: 'pnpm'
+    - uses: pnpm/action-setup@v2
+      with:
+        version: 7
+
     - run: pnpm i
     - run: cdk synth
       working-directory: "packages/cdk"
